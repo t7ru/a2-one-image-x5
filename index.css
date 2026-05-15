@@ -82,7 +82,7 @@ body {
   gap: 1rem;
 
   img {
-    width: min(100%, 24rem);
+    width: min(100%, 23rem);
     filter: contrast(250%) saturate(0%) brightness(1.15);
     transform: scale(0.92);
   }
