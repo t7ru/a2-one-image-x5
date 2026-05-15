@@ -50,13 +50,29 @@ body {
 /* #gallery: the fragmented image grid */
 #gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1.05fr));
+  gap: 1rem;
 
   img {
     width: 100%;
     height: 10rem;
     object-fit: cover;
+  }
+
+  img:nth-child(1) {
+    transform: rotate(-2deg);
+  }
+
+  img:nth-child(2) {
+    transform: translateY(0.75rem);
+  }
+
+  img:nth-child(3) {
+    transform: rotate(1.5deg);
+  }
+
+  img:nth-child(4) {
+    transform: translateY(-0.5rem);
   }
 }
 
