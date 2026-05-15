@@ -1,0 +1,149 @@
+/* page baseline */
+* {
+  box-sizing: border-box;
+}
+
+/* document body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #f2f2f2;
+}
+
+/* #hero-section: the opening full-bleed image section */
+#hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, #222, #000);
+}
+
+/* #gallery: the fragmented image grid */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* #resize-note: the responsive instruction */
+#resize-note {
+  max-width: 28rem;
+}
+
+/* common panel layout */
+.panel {
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* transformation-1: filters the image into a harsh high-contrast form */
+.transformation-1 {
+  display: grid;
+  gap: 1rem;
+}
+
+/* transformation-1 image treatment */
+.transformation-1 img {
+  width: min(100%, 24rem);
+  filter: contrast(250%) saturate(0%) brightness(1.15);
+  transform: scale(0.92);
+}
+
+/* transformation-2: turns the image into a tile field */
+.transformation-2 {
+  min-height: 18rem;
+}
+
+/* transformation-2 tile */
+.transformation-2 .tile {
+  min-height: 12rem;
+  background-image: url("images/heeho.jpg");
+  background-repeat: repeat;
+  background-size: 8rem 8rem;
+  filter: grayscale(100%) contrast(180%);
+}
+
+/* transformation-3: slices the image into a broken grid */
+.transformation-3 {
+  align-items: start;
+}
+
+/* transformation-3 image fragments */
+.transformation-3 img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* transformation-4: crops the image into a narrow window */
+.transformation-4 .crop {
+  width: min(100%, 28rem);
+  height: 14rem;
+  overflow: hidden;
+}
+
+/* transformation-4 image crop */
+.transformation-4 img {
+  width: 140%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* transformation-5: overlaps two copies with blending */
+.transformation-5 {
+  display: grid;
+  gap: 1rem;
+}
+
+/* transformation-5 blend stack */
+.blend-stack {
+  position: relative;
+  min-height: 18rem;
+}
+
+/* transformation-5 image layers */
+.blend-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* transformation-5 top layer */
+.blend-stack img:last-child {
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  transform: rotate(-6deg) scale(1.04);
+}
+
+/* transformation captions */
+.panel p {
+  max-width: 42rem;
+  line-height: 1.5;
+}
+
+/* small screen adjustments */
+@media (max-width: 700px) {
+  /* condensed layout for smaller screens */
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* tighter hero spacing */
+  #hero-section {
+    padding: 1.5rem;
+  }
+
+  /* make the blend stack taller on phones */
+  .blend-stack {
+    min-height: 14rem;
+  }
+}
