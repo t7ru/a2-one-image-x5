@@ -80,8 +80,9 @@ body {
     min-height: 12rem;
     background-image: url("images/heeho.jpg");
     background-repeat: repeat;
-    background-size: 8rem 8rem;
-    filter: grayscale(100%) contrast(180%);
+    background-size: 7rem 7rem;
+    background-position: center;
+    filter: grayscale(100%) contrast(200%);
   }
 }
 
