@@ -81,6 +81,7 @@ body {
     background-image: url("images/heeho.jpg");
     background-repeat: repeat;
     background-size: 8rem 8rem;
+    background-position: center;
     filter: grayscale(100%) contrast(180%);
   }
 }
