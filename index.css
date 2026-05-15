@@ -143,8 +143,9 @@ body {
 
   .blend-stack img:last-child {
     mix-blend-mode: screen;
-    opacity: 0.8;
-    transform: rotate(-6deg) scale(1.04);
+    opacity: 0.72;
+    transform: rotate(-8deg) scale(1.06);
+    filter: saturate(120%) contrast(110%);
   }
 }
 
