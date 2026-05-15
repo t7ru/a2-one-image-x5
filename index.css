@@ -110,8 +110,8 @@ body {
 /* transformation-4: crops the image into a narrow window */
 .transformation-4 {
   .crop {
-    width: min(100%, 28rem);
-    height: 14rem;
+    width: min(100%, 26rem);
+    height: 15rem;
     overflow: hidden;
   }
 
@@ -119,7 +119,7 @@ body {
     width: 140%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 25%;
   }
 }
 
