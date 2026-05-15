@@ -58,6 +58,22 @@ body {
     height: 10rem;
     object-fit: cover;
   }
+
+  img:nth-child(1) {
+    transform: rotate(-2deg);
+  }
+
+  img:nth-child(2) {
+    transform: translateY(0.75rem);
+  }
+
+  img:nth-child(3) {
+    transform: rotate(1.5deg);
+  }
+
+  img:nth-child(4) {
+    transform: translateY(-0.5rem);
+  }
 }
 
 /* transformation-1: filters the image into a harsh high-contrast form */
