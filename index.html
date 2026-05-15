@@ -1,65 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- document metadata and stylesheet link -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>one image x5</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <!-- opening hero area -->
-  <header id="hero-section">
-    <h1>one image x5</h1>
-    <p id="resize-note">resize the browser or phone viewport to watch the layout shift.</p>
-  </header>
+	<head>
+		<!-- document metadata and stylesheet link -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>one image x5</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<!-- opening hero area -->
+		<header id="hero-section">
+			<h1>one image x5</h1>
+			<p id="resize-note">
+				resize the browser or phone viewport to watch the layout shift.
+			</p>
+		</header>
 
-  <!-- transformation 1: extreme filtered portrait -->
-  <section class="transformation-1 panel">
-    <img src="images/heeho.jpg" alt="source image used for the filtered section">
-    <p>
-      manifesto idea: noise and distortion; css idea: filter and scale; relationship: the image is pushed into harsh contrast and reduced to a small object.
-    </p>
-  </section>
+		<!-- transformation 1: extreme filtered portrait -->
+		<section class="transformation-1 panel">
+			<img
+				src="images/heeho.jpg"
+				alt="source image used for the filtered section"
+			/>
+			<p>
+				idea: noise and distortion; css idea: filter and scale;
+				relationship: the image is pushed into harsh contrast and
+				reduced to a small object.
+			</p>
+		</section>
 
-  <!-- transformation 2: tiled texture field -->
-  <section class="transformation-2 panel">
-    <div class="tile"></div>
-    <p>
-      manifesto idea: replication and repetition; css idea: background repeat and tile sizing; relationship: the image becomes a texture field instead of a single picture.
-    </p>
-  </section>
+		<!-- transformation 2: tiled texture field -->
+		<section class="transformation-2 panel">
+			<div class="tile"></div>
+			<p>
+				idea: replication and repetition; css idea: background repeat
+				and tile sizing; relationship: the image becomes a texture field
+				instead of a single picture.
+			</p>
+		</section>
 
-  <!-- transformation 3: fragmented grid -->
-  <section class="transformation-3 panel" id="gallery">
-    <img src="images/heeho.jpg" alt="fragmented source image one">
-    <img src="images/heeho.jpg" alt="fragmented source image two">
-    <img src="images/heeho.jpg" alt="fragmented source image three">
-    <img src="images/heeho.jpg" alt="fragmented source image four">
-    <p>
-      manifesto idea: fragmentation and broken reading; css idea: grid, offset cells, and rotation; relationship: the image is sliced into a rough sequence of pieces.
-    </p>
-  </section>
+		<!-- transformation 3: fragmented grid -->
+		<section class="transformation-3 panel" id="gallery">
+			<img src="images/heeho.jpg" alt="fragmented source image one" />
+			<img src="images/heeho.jpg" alt="fragmented source image two" />
+			<img src="images/heeho.jpg" alt="fragmented source image three" />
+			<img src="images/heeho.jpg" alt="fragmented source image four" />
+			<p>
+				idea: fragmentation and broken reading; css idea: grid, offset
+				cells, and rotation; relationship: the image is sliced into a
+				rough sequence of pieces.
+			</p>
+		</section>
 
-  <!-- transformation 4: cropped and panned -->
-  <section class="transformation-4 panel">
-    <div class="crop">
-      <img src="images/heeho.jpg" alt="cropped source image">
-    </div>
-    <p>
-      manifesto idea: the partial image; css idea: overflow hidden with object-fit; relationship: only a narrow window of the source stays visible.
-    </p>
-  </section>
+		<!-- transformation 4: cropped and panned -->
+		<section class="transformation-4 panel">
+			<div class="crop">
+				<img src="images/heeho.jpg" alt="cropped source image" />
+			</div>
+			<p>
+				idea: the partial image; css idea: overflow hidden with
+				object-fit; relationship: only a narrow window of the source
+				stays visible.
+			</p>
+		</section>
 
-  <!-- transformation 5: blended overlap -->
-  <section class="transformation-5 panel">
-    <div class="blend-stack">
-      <img src="images/heeho.jpg" alt="blended source image one">
-      <img src="images/heeho.jpg" alt="blended source image two">
-    </div>
-    <p>
-      manifesto idea: unstable identity; css idea: opacity, filter, and mix-blend-mode; relationship: two copies interfere until the image feels doubled and unresolved.
-    </p>
-  </section>
-</body>
+		<!-- transformation 5: blended overlap -->
+		<section class="transformation-5 panel">
+			<div class="blend-stack">
+				<img src="images/heeho.jpg" alt="blended source image one" />
+				<img src="images/heeho.jpg" alt="blended source image two" />
+			</div>
+			<p>
+				idea: unstable identity; css idea: opacity, filter, and
+				mix-blend-mode; relationship: two copies interfere until the
+				image feels doubled and unresolved.
+			</p>
+		</section>
+	</body>
 </html>
