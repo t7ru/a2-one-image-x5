@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- document metadata and stylesheet link -->
+		<!-- document metadata and stylesheet link so all transformation logic stays external -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>one image x5</title>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<!-- opening hero area -->
+		<!-- opening hero area to frame the page before the five glitches -->
 		<header id="hero-section">
 			<h1>one image x5</h1>
 			<p id="resize-note">
@@ -16,7 +16,7 @@
 			</p>
 		</header>
 
-		<!-- transformation 1: extreme filtered portrait -->
+		<!-- transformation 1: extreme filtered portrait to foreground distortion -->
 		<section class="transformation-1 panel">
 			<img
 				src="images/heeho.jpg"
@@ -29,7 +29,7 @@
 			</p>
 		</section>
 
-		<!-- transformation 2: tiled texture field -->
+		<!-- transformation 2: tiled texture field to emphasize repetition -->
 		<section class="transformation-2 panel">
 			<div class="tile"></div>
 			<p>
@@ -39,7 +39,7 @@
 			</p>
 		</section>
 
-		<!-- transformation 3: fragmented grid -->
+		<!-- transformation 3: fragmented grid to break image continuity -->
 		<section class="transformation-3 panel" id="gallery">
 			<img src="images/heeho.jpg" alt="fragmented source image one" />
 			<img src="images/heeho.jpg" alt="fragmented source image two" />
@@ -52,7 +52,7 @@
 			</p>
 		</section>
 
-		<!-- transformation 4: cropped and panned -->
+		<!-- transformation 4: cropped and panned to keep only a partial view -->
 		<section class="transformation-4 panel">
 			<div class="crop">
 				<img src="images/heeho.jpg" alt="cropped source image" />
@@ -64,7 +64,7 @@
 			</p>
 		</section>
 
-		<!-- transformation 5: blended overlap -->
+		<!-- transformation 5: blended overlap to create unstable identity -->
 		<section class="transformation-5 panel">
 			<div class="blend-stack">
 				<img src="images/heeho.jpg" alt="blended source image one" />
@@ -76,5 +76,12 @@
 				image feels doubled and unresolved.
 			</p>
 		</section>
+
+		<!-- tried a giant typographic overlay but dropped it because it hid the image too much -->
+		<!--
+		<section class="transformation-typographic panel">
+			<div class="type-wall">glitch signal</div>
+		</section>
+		-->
 	</body>
 </html>

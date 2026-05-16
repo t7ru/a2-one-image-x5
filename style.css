@@ -163,3 +163,10 @@ body {
 		min-height: 13rem;
 	}
 }
+
+/* paused this because the page became too cramped on laptops */
+/*
+.panel {
+	padding-inline: 1rem;
+}
+*/
